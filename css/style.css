@@ -118,7 +118,15 @@ h2{
 	position: absolute;
     bottom: -95px;
     right: 250px;
-    width: 45%;
+	width: 45%;
+	z-index: 2;
+ }
+ .fondo-muebles{
+	position: absolute;
+    bottom: -50px;
+    right: 180px;
+    width: 50%;
+    z-index: 1;
  }
 
  @media only screen and (max-width: 500px) {
@@ -135,6 +143,13 @@ h2{
 		right: -75px;
 		width: 135%;
 	}
+	.fondo-muebles{
+		position: absolute;
+		bottom: 0px;
+		right: -50px;
+		width: 120%;
+		z-index: 1;
+	 }
 	h1{
 		font-size: 2.5rem;
 		font-family: 'Oswald', sans-serif;
