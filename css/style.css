@@ -98,6 +98,12 @@ h1{
 	 padding: 40px;
 	 width: 15%;
  }
+ .celular{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45%;
+ }
 
  @media only screen and (max-width: 500px) {
 	.logo-medo{
@@ -106,5 +112,11 @@ h1{
 		left:0px;		
 		padding: 20px;
 		width: 50%;
+	}
+	.celular{
+		position: absolute;
+		bottom: -70px;
+		right: -75px;
+		width: 135%;
 	}
   }
