@@ -116,16 +116,16 @@ h2{
  }
  .celular{
 	position: absolute;
-    bottom: -95px;
+    bottom: 0px;
     right: 250px;
 	width: 45%;
 	z-index: 2;
  }
  .fondo-muebles{
 	position: absolute;
-    bottom: -50px;
-    right: 180px;
-    width: 50%;
+    bottom: 0px;
+    right: 200px;
+    width: 45%;
     z-index: 1;
  }
 
@@ -139,15 +139,15 @@ h2{
 	}
 	.celular{
 		position: absolute;
-		bottom: -70px;
-		right: -75px;
-		width: 135%;
+		bottom: 0px;
+		right: -50px;
+		width: 125%;
 	}
 	.fondo-muebles{
 		position: absolute;
 		bottom: 0px;
-		right: -50px;
-		width: 120%;
+		right: -90px;
+		width: 130%;
 		z-index: 1;
 	 }
 	h1{
