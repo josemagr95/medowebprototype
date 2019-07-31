@@ -135,4 +135,20 @@ h2{
 		right: -75px;
 		width: 135%;
 	}
+	h1{
+		font-size: 2.5rem;
+		font-family: 'Oswald', sans-serif;
+		text-align: center;
+		position: relative;
+		top: 220px;
+		left: 0px;
+	}
+	h2{
+		font-size: 1.75rem;
+    	font-family: 'EB Garamond', serif;
+    	text-align: center;
+    	position: relative;
+		top: 230px;
+		left: 0px;
+	}
   }
