@@ -1,4 +1,7 @@
 @CHARSET "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Oswald&display=swap');
+
 /* Reset CSS
  * --------------------------------------- */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
@@ -59,7 +62,20 @@ body{
 	position: relative;
 }
 h1{
-	font-size: 6em;
+	font-size: 5em;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    position: absolute;
+    top: 240px;
+    left: 70px;
+}
+h2{
+	font-size: 2.5rem;
+    font-family: 'EB Garamond', serif;
+    text-align: left;
+    position: absolute;
+    top: 365px;
+    left: 70px;
 }
 
  .section{
@@ -100,8 +116,8 @@ h1{
  }
  .celular{
 	position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -95px;
+    right: 250px;
     width: 45%;
  }
 
