@@ -67,7 +67,8 @@ h1{
     text-align: left;
     position: absolute;
     top: 240px;
-    left: 70px;
+	left: 70px;
+	z-index: 2;
 }
 h2{
 	font-size: 2.5rem;
@@ -75,7 +76,8 @@ h2{
     text-align: left;
     position: absolute;
     top: 365px;
-    left: 70px;
+	left: 70px;
+	z-index: 2;
 }
 
  .section{
@@ -113,13 +115,14 @@ h2{
 	 left:0px;		
 	 padding: 40px;
 	 width: 15%;
+	 z-index: 4;
  }
  .celular{
 	position: absolute;
     bottom: 0px;
     right: 250px;
 	width: 45%;
-	z-index: 2;
+	z-index: 3;
  }
  .fondo-muebles{
 	position: absolute;
@@ -132,38 +135,42 @@ h2{
  @media only screen and (max-width: 500px) {
 	.logo-medo{
 		position: absolute;
-		top:70px;
-		left:0px;		
+		top: 5px;
+		left: 0px;
 		padding: 20px;
-		width: 50%;
+		width: 40%;
+		z-index: 4;
 	}
 	.celular{
 		position: absolute;
 		bottom: 0px;
-		right: -50px;
-		width: 125%;
+		right: -20px;
+		width: 109%;
+		z-index: 3;
 	}
 	.fondo-muebles{
 		position: absolute;
 		bottom: 0px;
-		right: -90px;
-		width: 130%;
+		right: -25px;
+		width: 110%;
 		z-index: 1;
 	 }
 	h1{
-		font-size: 2.5rem;
+		font-size: 2.25rem;
 		font-family: 'Oswald', sans-serif;
 		text-align: center;
 		position: relative;
-		top: 220px;
+		top: 130px;
 		left: 0px;
+		z-index: 2;
 	}
 	h2{
-		font-size: 1.75rem;
-    	font-family: 'EB Garamond', serif;
-    	text-align: center;
-    	position: relative;
-		top: 230px;
+		font-size: 1.35rem;
+		font-family: 'EB Garamond', serif;
+		text-align: center;
+		position: relative;
+		top: 130px;
 		left: 0px;
+		z-index: 2;
 	}
   }
