@@ -169,14 +169,14 @@ h4{
 		position: absolute;
 		top: 5px;
 		left: 0px;
-		padding: 34px;
-		width: 26%;
+		padding: 35px;
+		width: 30%;
 		z-index: 4;
 	}
 	.celular{
 		position: absolute;
 		bottom: 0px;
-		right: -60px;
+		right: -70px;
 		width: 140%;
 		z-index: 3;
 	}
@@ -195,20 +195,20 @@ h4{
 		z-index: 1;
 	 }
 	h1{
-		font-size: 2.25rem;
+		font-size: 2.75rem;
 		font-family: 'Palanquin Dark', sans-serif;
 		position: relative;
-		top: 95px;
+		top: 130px;
 		left: 0px;
 		z-index: 2;
 		padding-left: 35px;
 		line-height: 40px;
 	}
 	h2{
-		font-size: 1rem;
+		font-size: 1.25rem;
 		font-family: 'Roboto', sans-serif;
 		position: relative;
-		top: 110px;
+		top: 150px;
 		left: 35px;
 		z-index: 2;
 	}
