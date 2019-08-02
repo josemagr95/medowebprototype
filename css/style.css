@@ -171,9 +171,9 @@ h4{
 	.logo-medo{
 		position: absolute;
 		top: 5px;
-		left: 0px;
+		left: 1px;
 		padding: 40px;
-		width: 30%;
+		width: 25%;
 		z-index: 4;
 	}
 	.celular{

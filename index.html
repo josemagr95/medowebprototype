@@ -13,6 +13,9 @@
 
 	<link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+
 </head>
 <body>
 
@@ -32,6 +35,8 @@
 		<h3>Fabricación local</h3>
 		<h2>Madera proveniente de bosques renovables.</h2>
 		<img src="./img/medo_black.svg" class="logo-medo">
+		<img src="./img/celular.png" class="celular">
+		<img src="./img/fondo_muebles.png" class="fondo-muebles">
 	</div>
 
 	<div class="section" id="section2">
@@ -39,6 +44,8 @@
 		<h3>Diseños únicos</h3>
 		<h4>Conéctate con diseñadores de todo el mundo.</h4>
 		<img src="./img/medo_white.svg" class="logo-medo">
+		<img src="./img/celular.png" class="celular">
+		<img src="./img/fondo_muebles.png" class="fondo-muebles">
 	</div>
 	
 	<div class="section" id="section3">
@@ -46,6 +53,8 @@
 		<h3>Armado intuitivo</h3>
 		<h4>Nada más que añadir, nada más que quitar.</h4>
 		<img src="./img/medo_white.svg" class="logo-medo">
+		<img src="./img/celular.png" class="celular">
+		<img src="./img/fondo_muebles.png" class="fondo-muebles">
 	</div>
 	
 	<div class="section" id="section4">
@@ -53,11 +62,21 @@
 		<h1>Tecnología</h1>
 		<h2>Innovamos en el proceso de fabricación.</h2>
 		<img src="./img/medo_black.svg" class="logo-medo">
+		<img src="./img/celular.png" class="celular">
+		<img src="./img/fondo_muebles.png" class="fondo-muebles">
 	</div>
 	
 	<div class="section" id="section5">
 		<!-- <div class="fp-bg"></div> -->
 		<h1>Diseñadores</h1>
+		<div class="disenadores">
+				<div>Diseñador 1</div>
+				<div>Diseñador 2</div>
+				<div>Diseñador 3</div>
+				<div>Diseñador 4</div>
+				<div>Diseñador 5</div>
+				<div>Diseñador 6</div>
+		</div>
 		<img src="./img/medo_black.svg" class="logo-medo">
 	</div>
 	
@@ -74,7 +93,10 @@
 <script type="text/javascript" src="./js/examples.js"></script>
 <script type="text/javascript" src="./js/fullpage.parallax.min.js"></script>
 <script type="text/javascript" src="./js/fullpage.extensions.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
+
 
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
@@ -92,8 +114,18 @@
 		scrollingSpeed: 1250,
 		autoScrolling: true,
 		fitToSection:false
-    });
-	
+    });	
+</script>
+
+<script>
+	$(document).ready(function(){
+  		$('.disenadores').slick({
+    		slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 1000,
+ 		 });
+	});
 </script>
 
 </body>
