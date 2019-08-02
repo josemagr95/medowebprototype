@@ -166,6 +166,9 @@ h4{
     width: 105%;
     z-index: 1;
  }
+ .designer{
+	
+ }
 
  @media only screen and (max-width: 500px) {
 	.logo-medo{
@@ -197,6 +200,13 @@ h4{
 		width: 105%;
 		z-index: 1;
 	 }
+	 .designer{
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
 	h1{
 		font-size: 2.5rem;
 		font-family: 'Palanquin Dark', sans-serif;
@@ -232,6 +242,22 @@ h4{
 		position: relative;
 		top: 20px;
 		padding: 40px;
+		left: 0px;
+		z-index: 2;
+	}
+	h5{
+		font-size: 1rem;
+		font-family: 'Palanquin Dark', sans-serif;
+		position: relative;
+		top: 5px;
+		left: 0px;
+		z-index: 2;
+	}
+	h6{
+		font-size: 0.7rem;
+		font-family: 'Roboto', sans-serif;
+		position: relative;
+		margin-top: 10px;
 		left: 0px;
 		z-index: 2;
 	}
