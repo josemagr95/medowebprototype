@@ -175,21 +175,42 @@ h6{
     width: 45%;
     z-index: 1;
  }
- .bosque{
-	position: absolute;
-    bottom: 0px;
-    right: -55px;
-    width: 105%;
-    z-index: 1;
- }
- .designer{
+	.designer{
 	width: 65%;
 	margin: auto;
 	margin-top: 50%;
 }
+ .mesinha{
+	position: absolute;
+    bottom: 0px;
+    right: 170px;
+    width: 40%;
+    z-index: 3;
+}
+.forest{
+	position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+ }
+ .configurador{
+	position: absolute;
+    bottom: 0px;
+    right: 115px;
+    width: 50%;
+    z-index: 3;
+}
+.city{
+	position: absolute;
+    bottom: 0px;
+    right: -75px;
+    width: 110%;
+    z-index: 1;
+ }
 
  @media only screen and (max-width: 500px) {
-	.logo-medo{
+	.logo-medo{ /* MEDIA */
 		position: absolute;
 		top: 5px;
 		left: 1px;
@@ -197,33 +218,54 @@ h6{
 		width: 25%;
 		z-index: 4;
 	}
-	.celular{
+	.celular{ /* MEDIA */
 		position: absolute;
 		bottom: 0px;
 		right: -50px;
 		width: 130%;
 		z-index: 3;
 	}
-	.fondo-muebles{
+	.fondo-muebles{ /* MEDIA */
 		position: absolute;
 		bottom: 0px;
 		right: -25px;
 		width: 110%;
 		z-index: 1;
 	 }
-	 .bosque{
-		position: absolute;
-		bottom: 0px;
-		right: -55px;
-		width: 105%;
-		z-index: 1;
-	 }
-	 .designer{
+	 .designer{ /* MEDIA */
 		width: 70%;
 		margin: auto;
 		margin-top: 50%;
 	}
-	h1{
+	.mesinha{ /* MEDIA */
+		position: absolute;
+		bottom: 0px;
+		right: 20px;
+		width: 90%;
+		z-index: 3;
+	}
+	.forest{ /* MEDIA */
+		position: absolute;
+		bottom: 0px;
+		right: -265px;
+		width: 215%;
+		z-index: 1;
+	}
+	.configurador{ /* MEDIA */
+		position: absolute;
+		bottom: -15px;
+		right: -45px;
+		width: 120%;
+		z-index: 3;
+	}
+	.city{ /* MEDIA */
+		position: absolute;
+		bottom: 0px;
+		right: -140px;
+		width: 450%;
+		z-index: 1;
+	}
+	h1{ /* MEDIA */
 		font-size: 2.5rem;
 		font-family: 'Palanquin Dark', sans-serif;
 		position: relative;
@@ -233,7 +275,7 @@ h6{
 		padding: 40px;
 		line-height: 37px;
 	}
-	h2{
+	h2{ /* MEDIA */
 		font-size: 1rem;
 		font-family: 'Roboto', sans-serif;
 		position: relative;
@@ -242,7 +284,7 @@ h6{
 		left: 0px;
 		z-index: 2;
 	}
-	h3{
+	h3{ /* MEDIA */
 		font-size: 2.5rem;
 		font-family: 'Palanquin Dark', sans-serif;
 		position: relative;
@@ -252,7 +294,7 @@ h6{
 		padding: 40px;
 		line-height: 37px;
 	}
-	h4{
+	h4{ /* MEDIA */
 		font-size: 1rem;
 		font-family: 'Roboto', sans-serif;
 		position: relative;
@@ -261,7 +303,7 @@ h6{
 		left: 0px;
 		z-index: 2;
 	}
-	h5{
+	h5{ /* MEDIA */
 		font-size: 1rem;
 		font-family: 'Palanquin Dark', sans-serif;
 		position: relative;
@@ -269,7 +311,7 @@ h6{
 		left: 0px;
 		z-index: 2;
 	}
-	h6{
+	h6{ /* MEDIA */
 		font-size: 0.7rem;
 		font-family: 'Roboto', sans-serif;
 		position: relative;
