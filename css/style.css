@@ -130,28 +130,40 @@ h6{
  .section{
 	 background-size: cover;
  }
- #section0{
+ #section0 .fp-bg{
 	 background-image: url(../img/alpi8.jpg);
-	 height:100%;
+	 background-size: cover;
+	 background-position: center 80%;
  }
- #section1{
+ #section1 .fp-bg{
 	 background-image: url(../img/alpi1.jpg);
-	 height:100%;
+	 background-size: cover;
+	 background-position: center 80%;
  }
- #section2{
+ #section2 .fp-bg{
 	 background-image: url(../img/alpi9.jpg);
+	 background-size: cover;
+	 background-position: center 80%;
  }
- #section3{
+ #section3 .fp-bg{
 	 background-image: url(../img/alpi5.jpg);
+	 background-size: cover;
+	 background-position: center 80%;
  }
- #section4{
+ #section4 .fp-bg{
 	 background-image: url(../img/alpi8.jpg);
+	 background-size: cover;
+	 background-position: center 80%;
  }
- #section5{
+ #section5 .fp-bg{
 	 background-image: url(../img/alpi1.jpg);
+	 background-size: cover;
+	 background-position: center 80%;
  }
- #section6{
+ #section6 .fp-bg{
 	 background-image: url(../img/alpi9.jpg);
+	 background-size: cover;
+	 background-position: center 80%;
  }
  .logo-medo{
 	position: absolute;
