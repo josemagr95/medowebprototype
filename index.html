@@ -26,7 +26,7 @@
 		<h1>Elige, personalízalo</h1>
 		<h2>El diseño está en tus manos.</h2>
 		<img src="./img/medo_black.svg" class="logo-medo">
-		<img src="./img/celular.png" class="celular">
+		<img src="./img/celular.png" class="celular" data-parallaxify-range-x="50">
 		<img src="./img/fondo_muebles.png" class="fondo-muebles">
 	</div>
 
@@ -119,7 +119,7 @@
 <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="./js/slick.min.js"></script>
-
+<script type="text/javascript" src="./js/jquery.parallaxify.min.js"></script>
 
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
@@ -171,6 +171,23 @@ function myFunction(x) {
 		var x = window.matchMedia("(max-width: 600px)")
 		myFunction(x) // Call listener function at run time
 		x.addListener(myFunction) // Attach listener function on state changes
+</script>
+
+<script>
+	$.parallaxify({
+		verticalParallax: false,
+		positionProperty: 'transform',
+		responsive: true,
+		motionType: 'natural',
+		mouseMotionType: 'gaussian',
+		motionAngleX: 80,
+		motionAngleY: 80,
+		alphaFilter: 0.5,
+		adjustBasePosition: true,
+		alphaPosition: 0.025,
+		useMouseMove: true,
+        useGyroscope: true,
+	});
 </script>
 </body>
 </html>
