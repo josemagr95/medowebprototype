@@ -26,44 +26,41 @@
 		<h1>Elige, personalízalo</h1>
 		<h2>El diseño está en tus manos.</h2>
 		<img src="./img/medo_black.svg" class="logo-medo" >
-		<img src="./img/celular.png" class="celular">
-		<img src="./img/fondo_muebles.png" class="fondo-muebles">
+		<div class="parallax"><img src="./img/celular.png" class="celular" data-parallaxify-range-x="60"></div>
+		<div class="invertido-parallax"><img src="./img/fondo_muebles.png" class="fondo-muebles" data-parallaxify-range-x="30"></div>
+		
 	</div>
 
 	<div class="section" id="section1">
 		<div class="fp-bg"></div>
 		<h3>Fabricación local</h3>
-		<h2>Madera proveniente de bosques renovables.</h2>
-		<img src="./img/medo_black.svg" class="logo-medo">
-		<img src="./img/mesinha.png" class="mesinha">
-		<img src="./img/forest.png" class="forest">
+		<h4>Madera proveniente de bosques renovables.</h4>
+		<img src="./img/medo_white.svg" class="logo-medo">
+		<div class="parallax"><img src="./img/mesinha.png" class="mesinha"  data-parallaxify-range-x="70"></div>
 	</div>
 
 	<div class="section" id="section2">
 		<div class="fp-bg"></div>
 		<h3>Diseños únicos</h3>
-		<h4>Conéctate con diseñadores de todo el mundo.</h4>
-		<img src="./img/medo_white.svg" class="logo-medo">
-		<img src="./img/configurador.png" class="configurador">
-		<img src="./img/city.png" class="city">
+		<h2>Conéctate con diseñadores de todo el mundo.</h2>
+		<img src="./img/medo_black.svg" class="logo-medo">
+		<div class="parallax"><img src="./img/configurador.png" class="configurador" data-parallaxify-range="70"></div>
 	</div>
 	
 	<div class="section" id="section3">
 		<div class="fp-bg"></div>
 		<h3>Armado intuitivo</h3>
-		<h4>Nada más que añadir, nada más que quitar.</h4>
+		<h2>Nada más que añadir, nada más que quitar.</h2>
 		<img src="./img/medo_white.svg" class="logo-medo">
-		<img src="./img/celular.png" class="celular">
-		<img src="./img/fondo_muebles.png" class="fondo-muebles">
+		<div class="parallax"><img src="./img/celular.png" class="celular" data-parallaxify-range-x="70"></div>
 	</div>
 	
 	<div class="section" id="section4">
 		<div class="fp-bg"></div>
-		<h1>Tecnología</h1>
+		<h1 style="color:#333">Tecnología</h1>
 		<h2>Innovamos en el proceso de fabricación.</h2>
 		<img src="./img/medo_black.svg" class="logo-medo">
-		<img src="./img/celular.png" class="celular">
-		<img src="./img/fondo_muebles.png" class="fondo-muebles">
+		<div class="parallax"><img src="./img/kuka.png" class="kuka"  data-parallaxify-range-x="70"></div>
 	</div>
 	
 	<div class="section" id="section5">
@@ -116,9 +113,9 @@
 <script type="text/javascript" src="./js/examples.js"></script>
 <script type="text/javascript" src="./js/fullpage.parallax.min.js"></script>
 <script type="text/javascript" src="./js/fullpage.extensions.min.js"></script>
-<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
 <script type="text/javascript" src="./js/slick.min.js"></script>
+<script type="text/javascript" src="./js/jquery.parallaxify.js"></script>
 
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
@@ -130,7 +127,7 @@
 		parallaxKey: 'C86F8C66-837548EC-AEF8CBCE-2AC78C30',
 		parallaxOptions: {
 			type: 'reveal',
-			percentage: 70
+			percentage: 85
 		},
 		scrollingSpeed: 1250,
 		autoScrolling: true,
@@ -150,26 +147,58 @@
 </script>
 
 <script>
-function myFunction(x) {
-		if (x.matches) { // If media query matches			
-			$('.disenadores').slick({
-				slidesToShow: 1,				
-				slidesToScroll: 1,
-				autoplaySpeed: 2500,
-				autoplay: true,
- 		 });
-		} else {			
-			$('.disenadores').slick({
-				slidesToShow: 4,
-				slidesToScroll: 1,
-				autoplaySpeed: 2000,
-				autoplay: true,
- 		 });
-		}
-		}
-		var x = window.matchMedia("(max-width: 600px)")
-		myFunction(x) // Call listener function at run time
-		x.addListener(myFunction) // Attach listener function on state changes
+	function myFunction(x) {
+			if (x.matches) { // If media query matches			
+				$('.disenadores').slick({
+					slidesToShow: 1,				
+					slidesToScroll: 1,
+					autoplaySpeed: 2500,
+					autoplay: true,
+			});
+			} else {			
+				$('.disenadores').slick({
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					autoplaySpeed: 2000,
+					autoplay: true,
+			});
+			}
+			}
+	var x = window.matchMedia("(max-width: 600px)")
+	myFunction(x) 
+	x.addListener(myFunction) 
+</script>
+<script>	
+	$(document).ready(function(){
+		$('.parallax').parallaxify({
+			responsive: true,
+			motionType: "natural",
+			mouseMotionType: "gaussian",
+			motionAngleX: 90,
+			motionAngleY: 90,
+			alphaFilter: 0.5,
+			adjustBasePosition: true,
+			alphaPosition: 0.025	
+		});
+	});
+
+	$.parallaxify.positionProperty.inverted = {
+      setPosition: function($element, left, originalLeft, top, originalTop) {
+        $element.css('transform', 'translate(' + (originalLeft - left) + 'px, ' + (originalTop - top) + 'px)');
+      }
+	  };
+	  
+  	$('.invertido-parallax').parallaxify({
+		positionProperty: 'inverted',
+		responsive: true,
+		motionType: "natural",
+		mouseMotionType: "gaussian",
+		motionAngleX: 90,
+		motionAngleY: 90,
+		alphaFilter: 0.5,
+		adjustBasePosition: true,
+		alphaPosition: 0.025
+  	});
 </script>
 </body>
 </html>
