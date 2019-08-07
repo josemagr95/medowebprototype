@@ -148,7 +148,7 @@
 
 <script>
 	function myFunction(x) {
-			if (x.matches) { // If media query matches			
+			if (x.matches) {		
 				$('.disenadores').slick({
 					slidesToShow: 1,				
 					slidesToScroll: 1,
@@ -172,13 +172,14 @@
 	$(document).ready(function(){
 		$('.parallax').parallaxify({
 			responsive: true,
-			motionType: "natural",
-			mouseMotionType: "gaussian",
+			motionType: 'natural',
+        	mouseMotionType: 'gaussian',
 			motionAngleX: 90,
 			motionAngleY: 90,
 			alphaFilter: 0.5,
 			adjustBasePosition: true,
-			alphaPosition: 0.025	
+			alphaPosition: 0.025,
+			useGyroscope: false	
 		});
 	});
 
@@ -191,13 +192,14 @@
   	$('.invertido-parallax').parallaxify({
 		positionProperty: 'inverted',
 		responsive: true,
-		motionType: "natural",
-		mouseMotionType: "gaussian",
+		motionType: 'natural',
+        mouseMotionType: 'gaussian',
 		motionAngleX: 90,
 		motionAngleY: 90,
 		alphaFilter: 0.5,
 		adjustBasePosition: true,
-		alphaPosition: 0.025
+		alphaPosition: 0.025,
+		useGyroscope: false	
   	});
 </script>
 </body>
