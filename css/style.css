@@ -252,6 +252,44 @@ h6{
  }
 
  @media only screen and (max-width: 500px) {
-	
+	#section0 .linea-divisora{
+		position: absolute;
+		bottom: 10%;
+		right: 50%;
+		height: 35px;
+	}
+	#section0 .logo-medo{
+		position: absolute;
+		bottom: 10%;
+		padding: 7.5px;
+		right: 50%;
+		height: 20px;
+	}
+	#section0 h1{
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		padding: 7.5px;
+		font-size: 15px;
+	}
+	#section1 .linea-divisora{
+		position: absolute;
+		bottom: 50%;
+		right: 50%;
+		height: 35px;
+	}
+	#section1 .logo-medo{
+		position: absolute;
+		bottom: 50%;
+		padding: 7.5px;
+		right: 50%;
+		height: 20px;
+	}
+	#section1 h1{
+		position: absolute;
+		bottom: 50%;
+		left: 50%;
+		padding: 7.5px;
+		font-size: 15px;
 	}
   }
