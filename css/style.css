@@ -1,6 +1,6 @@
 @CHARSET "ISO-8859-1";
 
-@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700&display=swap');
 
 /* Reset CSS
  * --------------------------------------- */
@@ -51,7 +51,7 @@ abbr,acronym { border: 0;
 /* Custom CSS
  * --------------------------------------- */
 body{
-	font-family: arial,helvetica;
+	font-family: 'Source Sans Pro', sans-serif;
 	color: rgba(0,0,0,0.5);
 }
 .wrap{
@@ -62,21 +62,15 @@ body{
 }
 h1{
 	color: white;
-	font-size: 4.35rem;
-    letter-spacing: -1px;
-    font-weight: 600;
-    font-family: 'Palanquin Dark', sans-serif;
-    text-align: left;
-    position: absolute;
-    top: 240px;
-    left: 66px;
+    letter-spacing: 2px;
+    font-weight: 300;
     z-index: 2;
 }
 h2{
 	color: #333;
 	font-size: 1.7rem;
     letter-spacing: -1px;
-    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     text-align: left;
     position: absolute;
     top: 357px;
@@ -87,8 +81,7 @@ h3{
 	color: white;
 	font-size: 4.35rem;
     letter-spacing: -1px;
-    font-weight: 600;
-    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 700;
     text-align: left;
     position: absolute;
     top: 240px;
@@ -127,21 +120,19 @@ h6{
  .section{
 	 text-align:center;
  }
- .section{
-	 background-size: cover;
- }
+  /* medo what you want Slide 1 + Foto persona tatuada */
  #section0 .fp-bg{
-	 background-image: url(../img/alpi8.jpg);
+	 background-image: url(../img/tatuado-medo.jpg);
 	 background-size: cover;
-	 background-position: center 80%;
+     background-position: center 80%;
+/* medo what you want Slide 2*/
  }
  #section1 .fp-bg{
-	 background-image: url(../img/forest.jpg);
-	 background-size: cover;
-	 background-position: center 80%;
+     background-color: #1D1D1B;
  }
+ /* you do what you want Slide 2*/
  #section2 .fp-bg{
-	 background-image: url(../img/new-york.jpg);
+     background-image: url(../img/hibridos.png);
 	 background-size: cover;
 	 background-position: center 80%;
  }
@@ -155,22 +146,63 @@ h6{
 	 background-size: cover;
 	 background-position: center 80%;
  }
- #section5 .fp-bg{
+  /* medo what you want Slide 1 */
+  #section5 .fp-bg{
 	 background-color: antiquewhite;
  }
- #section6 .fp-bg{
+ /* medo what you want Slide 1 */
+ #section6 .fp-bg{ 
 	 background-image: url(../img/alpi9.jpg);
 	 background-size: cover;
 	 background-position: center 80%;
  }
- .logo-medo{
-	position: absolute;
-    top: 0px;
-    left: 28px;
-    padding: 40px;
-    width: 10%;
-    z-index: 4;
+
+.linea-divisora{
+	height: 50px;
  }
+ 
+.logo-medo{
+    height: 25px;
+    z-index: 4;
+}
+
+#section0 .linea-divisora{
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+}
+#section0 .logo-medo{
+	position: absolute;
+    bottom: 10%;
+    padding: 12.5px;
+    right: 25%;
+}
+#section0 h1{
+	position: absolute;
+    bottom: 10%;
+	left: 75%;
+    font-size: 20px;
+    padding: 12.5px;
+}
+#section1 .linea-divisora{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+}
+#section1 .logo-medo{
+	position: absolute;
+    bottom: 50%;
+    padding: 12.5px;
+    right: 50%;
+}
+#section1 h1{
+	position: absolute;
+    bottom: 50%;
+    left: 50%;
+    font-size: 20px;
+    padding: 12.5px;
+}
+
  .celular{
 	position: absolute;
     bottom: 0px;
@@ -220,113 +252,6 @@ h6{
  }
 
  @media only screen and (max-width: 500px) {
-	.logo-medo{ /* MEDIA */
-		position: absolute;
-		top: 5px;
-		left: 1px;
-		padding: 40px;
-		width: 25%;
-		z-index: 4;
-	}
-	.celular{ /* MEDIA */
-		position: absolute;
-		bottom: 0px;
-		right: -50px;
-		width: 130%;
-		z-index: 3;
-	}
-	.fondo-muebles{ /* MEDIA */
-		position: absolute;
-		bottom: 0px;
-		right: -25px;
-		width: 110%;
-		z-index: 1;
-	 }
-	 .designer{ /* MEDIA */
-		width: 70%;
-		margin: auto;
-		margin-top: 50%;
-	}
-	.mesinha{ /* MEDIA */
-		position: absolute;
-		bottom: 0px;
-		right: 20px;
-		width: 90%;
-		z-index: 3;
-	}
-	.forest{ /* MEDIA */
-		position: absolute;
-		bottom: 0px;
-		right: -265px;
-		width: 215%;
-		z-index: 1;
-	}
-	.configurador{ /* MEDIA */
-		position: absolute;
-		bottom: -15px;
-		right: -45px;
-		width: 120%;
-		z-index: 3;
-	}
-	.kuka{ /* MEDIA */
-		position: absolute;
-		bottom: 0px;
-		right: -50px;
-		width: 130%;
-		z-index: 3;
-	}
-	h1{ /* MEDIA */
-		font-size: 2.5rem;
-		font-family: 'Palanquin Dark', sans-serif;
-		position: relative;
-		top: 70px;
-		left: 0px;
-		z-index: 2;
-		padding: 40px;
-		line-height: 37px;
-	}
-	h2{ /* MEDIA */
-		font-size: 1rem;
-		font-family: 'Roboto', sans-serif;
-		position: relative;
-		top: 20px;
-		padding: 40px;
-		left: 0px;
-		z-index: 2;
-	}
-	h3{ /* MEDIA */
-		font-size: 2.5rem;
-		font-family: 'Palanquin Dark', sans-serif;
-		position: relative;
-		top: 70px;
-		left: 0px;
-		z-index: 2;
-		padding: 40px;
-		line-height: 37px;
-	}
-	h4{ /* MEDIA */
-		font-size: 1rem;
-		font-family: 'Roboto', sans-serif;
-		position: relative;
-		top: 20px;
-		padding: 40px;
-		left: 0px;
-		z-index: 2;
-	}
-	h5{ /* MEDIA */
-		font-size: 1rem;
-		font-family: 'Palanquin Dark', sans-serif;
-		position: relative;
-		top: 5px;
-		left: 0px;
-		z-index: 2;
-	}
-	h6{ /* MEDIA */
-		font-size: 0.7rem;
-		font-family: 'Roboto', sans-serif;
-		position: relative;
-		margin-top: 10px;
-		left: 0px;
-		z-index: 2;
+	
 	}
   }
