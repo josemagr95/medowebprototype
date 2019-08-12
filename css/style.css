@@ -1,6 +1,6 @@
 @CHARSET "ISO-8859-1";
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900&display=swap');
 
 /* Reset CSS
  * --------------------------------------- */
@@ -34,13 +34,6 @@ caption,th {
     text-align: left;
 
 }
-h1,h2,h3,h4,h5,h6 {
-    font-weight: normal;
-    font-size: 100%;
-    margin:0;
-    padding:0;
-    color:#444;
-}
 q:before,q:after {
     content:'';
 }
@@ -64,59 +57,36 @@ h1{
 	color: white;
     letter-spacing: 2px;
     font-weight: 300;
-    z-index: 2;
+	z-index: 2;
 }
 h2{
-	color: #333;
-	font-size: 1.7rem;
-    letter-spacing: -1px;
-    font-weight: 300;
-    text-align: left;
-    position: absolute;
-    top: 357px;
-    left: 70px;
+	color: #000000;
+    font-weight: 900;
 	z-index: 2;	
+	text-align: left;
+	position: absolute;    
+	font-size: 3rem;
+	left: 7.5%;
+	top: 50%;
+	padding-left: 12.5%;
 }
 h3{
-	color: white;
-	font-size: 4.35rem;
-    letter-spacing: -1px;
-    font-weight: 700;
-    text-align: left;
+	color: #8A786F;
+    letter-spacing: 2px;
+    font-weight: 600;
+	z-index: 2;
+	transform: rotate(270deg);
     position: absolute;
-    top: 240px;
-    left: 66px;
-    z-index: 2;
-	
+    top: 50%;
+    font-size: 13px;
+    padding: 20px;
 }
 h4{
-	color: lightgrey;
-	font-size: 1.7rem;
-    letter-spacing: -1px;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-    position: absolute;
-    top: 357px;
-    left: 70px;
-	z-index: 2;	
+	color: #8A786F;
+	font-weight: 900;
+	font-size: 10px;
+    z-index: 2;
 }
-h5{
-	font-size: 1rem;
-	font-family: 'Palanquin Dark', sans-serif;
-	position: relative;
-	top: 5px;
-	left: 0px;
-	z-index: 2;
-}
-h6{
-	font-size: 0.7rem;
-	font-family: 'Roboto', sans-serif;
-	position: relative;
-	margin-top: 10px;
-	left: 0px;
-	z-index: 2;
-}
-
  .section{
 	 text-align:center;
  }
@@ -132,29 +102,35 @@ h6{
  }
  /* you do what you want Slide 2*/
  #section2 .fp-bg{
-     background-image: url(../img/hibridos.png);
-	 background-size: cover;
-	 background-position: center 80%;
+	background-color: #EFEFEF;
+    background-image: url(../img/hibridos.svg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
  }
  #section3 .fp-bg{
-	 background-image: url(../img/alpi5.jpg);
-	 background-size: cover;
-	 background-position: center 80%;
+	background-color: #EFEFEF;
+    background-image: url(../img/app.png);
+    background-size: 30%;
+    background-position: bottom;
+    background-position-x: 75%;
+    background-repeat: no-repeat;
  }
  #section4 .fp-bg{
-	 background-image: url(../img/army.png);
-	 background-size: cover;
-	 background-position: center 80%;
+	background-color: #EFEFEF;
+    background-image: url(../img/hibrido.png);
+    background-size: 35%;
+    background-position-x: 80%;
+    background-position-y: 70%;
+    background-repeat: no-repeat;
  }
   /* medo what you want Slide 1 */
   #section5 .fp-bg{
-	 background-color: antiquewhite;
+	background-color: #EFEFEF;
  }
  /* medo what you want Slide 1 */
  #section6 .fp-bg{ 
-	 background-image: url(../img/alpi9.jpg);
-	 background-size: cover;
-	 background-position: center 80%;
+	background-color: #EFEFEF;
  }
 
 .linea-divisora{
@@ -202,54 +178,43 @@ h6{
     font-size: 20px;
     padding: 12.5px;
 }
-
- .celular{
-	position: absolute;
-    bottom: 0px;
-    right: 200px;
-    width: 50%;
-    z-index: 3;
- }
- .fondo-muebles{
-	position: absolute;
-    bottom: 0px;
-    right: 200px;
-    width: 45%;
-    z-index: 1;
- }
-	.designer{
-	width: 65%;
-	margin: auto;
-	margin-top: 50%;
+.menu{
+	height: 20px;
+    position: absolute;
+    bottom: 90%;
+    right: 92.5%;
 }
- .mesinha{
-	position: absolute;
-    bottom: 0px;
-    right: 170px;
-    width: 40%;
-    z-index: 3;
+.logo-arauco {
+	height: 7px;
+    position: absolute;
+    bottom: 7.5%;
+	left: 80%;	
+	padding: 3px;
 }
-.forest{
+.logo-medo-gris{
 	position: absolute;
-    bottom: 0px;
-    right: 0;
-    width: 100%;
-    z-index: 1;
- }
- .configurador{
-	position: absolute;
-    bottom: 0px;
-    right: 115px;
-    width: 50%;
-    z-index: 3;
+    bottom: 90%;
+    left: 7.5%;
+	padding-left: 12.5%;
+	height: 30px;
 }
-.kuka{
+.about{
 	position: absolute;
-    bottom: 0px;
-    right: -15px;
-    width: 70%;
-    z-index: 3;
- }
+	bottom: 7.5%;
+	left: 7.5%;
+	padding-left: 12.5%;
+}
+.contact{
+	position: absolute;
+	bottom: 7.5%;
+	left: 7.5%;
+	padding-left: 20%;
+}
+.innovation{
+	position: absolute;
+    bottom: 7.5%;
+    right: 20%;
+}
 
  @media only screen and (max-width: 500px) {
 	#section0 .linea-divisora{

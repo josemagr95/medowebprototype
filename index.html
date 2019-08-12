@@ -24,41 +24,68 @@
 	<div class="section" id="section0">
 		<div class="fp-bg"></div>
 		<h1>what you want</h1>
-		<img src="./img/medo_white.svg" class="logo-medo" >	
+		<a href="#medo"><img src="./img/medo_white.svg" class="logo-medo" ></a>
         <img src="./img/linea_divisora.svg" class="linea-divisora" >	
 	</div>
 
 	<div class="section" id="section1">
 		<div class="fp-bg"></div>
 		<h1>what you want</h1>
-		<img src="./img/medo_white.svg" class="logo-medo" >	
+		<a href="#home"><img src="./img/medo_white.svg" class="logo-medo" ></a>
         <img src="./img/linea_divisora.svg" class="linea-divisora" >	
     </div>
 
 	<div class="section" id="section2">
 		<div class="fp-bg"></div>
-        <img src="./img/icono_menu.svg" class="menu">
-		<img src="./img/medo_gris.svg" class="logo-medo">
-
-
+        <img src="./img/menu.svg" class="menu">
+		<a href="#home"><img src="./img/medo_gris.svg" class="logo-medo-gris"></a>			
+		<h3>YOUR EXPERIENCE</h3>
+		<h2 style="color:#8EE4C6">You Do</h2>
+		<h2></br>what you want</h2>
+		<div class="footer">
+			<h4>
+				<span class="about">About me.do</span>
+				<span class="contact">Contact</span>
+				<span class="innovation">me.do is an innovation project by</span>
+			</h4>
+			<img src="./img/logo-arauco.svg" class="logo-arauco">
+		</div>
     </div>
 	
 	<div class="section" id="section3">
-		<div class="fp-bg"></div>
-		<h3>Armado intuitivo</h3>
-		<h2>Nada más que añadir, nada más que quitar.</h2>
-		<img src="./img/medo_white.svg" class="logo-medo">
-		<div class="parallax"><img src="./img/celular.png" class="celular" data-parallaxify-range-x="70"></div>
+			<div class="fp-bg"></div>
+			<img src="./img/menu.svg" class="menu">
+			<a href="#home"><img src="./img/medo_gris.svg" class="logo-medo-gris"></a>			
+			<h3>YOUR EXPERIENCE</h3>
+			<h2 style="color:#8EE4C6">You Design</h2>
+			<h2></br>what you want</h2>
+			<div class="footer">
+				<h4>
+					<span class="about">About me.do</span>
+					<span class="contact">Contact</span>
+					<span class="innovation">me.do is an innovation project by</span>
+				</h4>
+				<img src="./img/logo-arauco.svg" class="logo-arauco">
+			</div>
 	</div>
 	
 	<div class="section" id="section4">
-		<div class="fp-bg"></div>
-		<h1 style="color:#333">Tecnología</h1>
-		<h2>Innovamos en el proceso de fabricación.</h2>
-		<img src="./img/medo_black.svg" class="logo-medo">
-		<div class="parallax"><img src="./img/kuka.png" class="kuka"  data-parallaxify-range-x="70"></div>
+			<div class="fp-bg"></div>
+			<img src="./img/menu.svg" class="menu">
+			<a href="#home"><img src="./img/medo_gris.svg" class="logo-medo-gris"></a>		
+			<h3>YOUR EXPERIENCE</h3>
+			<h2 style="color:#8EE4C6">You Get</h2>
+			<h2></br>what you want</h2>
+			<div class="footer">
+				<h4>
+					<span class="about">About me.do</span>
+					<span class="contact">Contact</span>
+					<span class="innovation">me.do is an innovation project by</span>
+				</h4>
+				<img src="./img/logo-arauco.svg" class="logo-arauco">
+			</div>
 	</div>
-	
+<!-- 	
 	<div class="section" id="section5">
 		<div class="fp-bg"></div>
 		<div class="disenadores">
@@ -102,7 +129,7 @@
 		<h4>Partners.</h4>
 		<img src="./img/medo_white.svg" class="logo-medo">
 	</div>
-</div>
+</div> -->
 
 
 <script type="text/javascript" src="./js/fullpage.js"></script>
@@ -115,6 +142,7 @@
 
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
+		anchors: ['home', 'medo', 'youdo', 'youdesign', 'youget'],
 		licenseKey: '5C38BC7D-960744E4-95CC12D2-0B887589',
         verticalCentered: false,
 		navigation:true,
@@ -166,16 +194,15 @@
 </script>
 <script>	
 	$(document).ready(function(){
-		$('.parallax').parallaxify({
+		$.parallaxify({
 			responsive: true,
 			motionType: 'natural',
         	mouseMotionType: 'gaussian',
 			motionAngleX: 90,
 			motionAngleY: 90,
 			alphaFilter: 0.5,
-			adjustBasePosition: true,
-			alphaPosition: 0.025,
-			useGyroscope: false	
+			useGyroscope: false,
+			positionProperty: 'transform'
 		});
 	});
 
