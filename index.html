@@ -18,7 +18,19 @@
 
 </head>
 <body>
-
+<div class="menu-medo">
+		<img src="./img/menu.svg" class="menu">
+		<a href="#home"><img src="./img/medo_gris.svg" class="logo-medo-gris"></a>		
+		<h3>YOUR EXPERIENCE</h3>
+		<div class="footer">
+				<h4>
+					<span class="about">About me.do</span>
+					<span class="contact">Contact</span>
+					<span class="innovation">me.do is an innovation project by</span>
+				</h4>
+				<img src="./img/logo-arauco.svg" class="logo-arauco">
+		</div>
+</div>
 <div id="fullpage">
 
 	<div class="section" id="section0">
@@ -34,56 +46,23 @@
 		<a href="#home"><img src="./img/medo_white.svg" class="logo-medo" ></a>
         <img src="./img/linea_divisora.svg" class="linea-divisora" >	
     </div>
-
 	<div class="section" id="section2">
 		<div class="fp-bg"></div>
-        <img src="./img/menu.svg" class="menu">
-		<a href="#home"><img src="./img/medo_gris.svg" class="logo-medo-gris"></a>			
-		<h3>YOUR EXPERIENCE</h3>
 		<h2 style="color:#8EE4C6">You Do</h2>
 		<h2></br>what you want</h2>
-		<div class="footer">
-			<h4>
-				<span class="about">About me.do</span>
-				<span class="contact">Contact</span>
-				<span class="innovation">me.do is an innovation project by</span>
-			</h4>
-			<img src="./img/logo-arauco.svg" class="logo-arauco">
-		</div>
     </div>
 	
 	<div class="section" id="section3">
 			<div class="fp-bg"></div>
-			<img src="./img/menu.svg" class="menu">
-			<a href="#home"><img src="./img/medo_gris.svg" class="logo-medo-gris"></a>			
-			<h3>YOUR EXPERIENCE</h3>
 			<h2 style="color:#8EE4C6">You Design</h2>
 			<h2></br>what you want</h2>
-			<div class="footer">
-				<h4>
-					<span class="about">About me.do</span>
-					<span class="contact">Contact</span>
-					<span class="innovation">me.do is an innovation project by</span>
-				</h4>
-				<img src="./img/logo-arauco.svg" class="logo-arauco">
-			</div>
+			
 	</div>
 	
 	<div class="section" id="section4">
 			<div class="fp-bg"></div>
-			<img src="./img/menu.svg" class="menu">
-			<a href="#home"><img src="./img/medo_gris.svg" class="logo-medo-gris"></a>		
-			<h3>YOUR EXPERIENCE</h3>
 			<h2 style="color:#8EE4C6">You Get</h2>
 			<h2></br>what you want</h2>
-			<div class="footer">
-				<h4>
-					<span class="about">About me.do</span>
-					<span class="contact">Contact</span>
-					<span class="innovation">me.do is an innovation project by</span>
-				</h4>
-				<img src="./img/logo-arauco.svg" class="logo-arauco">
-			</div>
 	</div>
 <!-- 	
 	<div class="section" id="section5">
@@ -155,7 +134,16 @@
 		},
 		scrollingSpeed: 1250,
 		autoScrolling: true,
-		fitToSection:false
+		fitToSection:false,
+		v2compatible: false,
+		onLeave: function(origin, destination, direction){
+		if(destination.index == 0 || destination.index == 1 ){
+			$('.menu-medo').css('display','none');
+		}
+		if(destination.index == 2 || destination.index == 3 || destination.index == 4){
+			$('.menu-medo').css('display','block');
+		}
+		}
     });	
 </script>
 

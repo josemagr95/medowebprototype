@@ -7,7 +7,7 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
     padding: 0;
-    margin: 0;
+	margin: 0;	
 }
 a{
 	text-decoration:none;
@@ -45,7 +45,7 @@ abbr,acronym { border: 0;
  * --------------------------------------- */
 body{
 	font-family: 'Source Sans Pro', sans-serif;
-	color: rgba(0,0,0,0.5);
+	background-color: #EFEFEF;	
 }
 .wrap{
 	margin-left: auto;
@@ -85,54 +85,40 @@ h4{
 	color: #8A786F;
 	font-weight: 900;
 	font-size: 10px;
-    z-index: 2;
+    z-index: 10;
 }
  .section{
 	 text-align:center;
  }
-  /* medo what you want Slide 1 + Foto persona tatuada */
  #section0 .fp-bg{
-	 background-image: url(../img/tatuado-medo.jpg);
+	 background-image: url(../img/tatuado-medo.jpg); 
 	 background-size: cover;
      background-position: center 80%;
-/* medo what you want Slide 2*/
  }
  #section1 .fp-bg{
      background-color: #1D1D1B;
  }
- /* you do what you want Slide 2*/
  #section2 .fp-bg{
-	background-color: #EFEFEF;
     background-image: url(../img/hibridos.svg);
     background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
+	background-position: center;	
+	background-repeat: no-repeat;
  }
  #section3 .fp-bg{
-	background-color: #EFEFEF;
     background-image: url(../img/app.png);
     background-size: 30%;
     background-position: bottom;
-    background-position-x: 75%;
-    background-repeat: no-repeat;
+	background-position-x: 75%;
+	background-repeat: no-repeat;
  }
  #section4 .fp-bg{
-	background-color: #EFEFEF;
     background-image: url(../img/hibrido.png);
     background-size: 35%;
     background-position-x: 80%;
-    background-position-y: 70%;
-    background-repeat: no-repeat;
+	background-position-y: 70%;
+	background-repeat: no-repeat;
  }
-  /* medo what you want Slide 1 */
-  #section5 .fp-bg{
-	background-color: #EFEFEF;
- }
- /* medo what you want Slide 1 */
- #section6 .fp-bg{ 
-	background-color: #EFEFEF;
- }
-
+ 
 .linea-divisora{
 	height: 50px;
  }
@@ -182,7 +168,11 @@ h4{
 	height: 20px;
     position: absolute;
     bottom: 90%;
-    right: 92.5%;
+	right: 92.5%;	
+    z-index: 10;
+}
+.menu-medo{
+	display: none;
 }
 .logo-arauco {
 	height: 7px;
@@ -190,30 +180,35 @@ h4{
     bottom: 7.5%;
 	left: 80%;	
 	padding: 3px;
+	z-index: 10;
 }
 .logo-medo-gris{
 	position: absolute;
     bottom: 90%;
     left: 7.5%;
 	padding-left: 12.5%;
-	height: 30px;
+	height: 30px;	
+    z-index: 10;
 }
 .about{
 	position: absolute;
 	bottom: 7.5%;
 	left: 7.5%;
 	padding-left: 12.5%;
+	z-index: 10;
 }
 .contact{
 	position: absolute;
 	bottom: 7.5%;
 	left: 7.5%;
 	padding-left: 20%;
+	z-index: 10;
 }
 .innovation{
 	position: absolute;
     bottom: 7.5%;
-    right: 20%;
+	right: 20%;
+	z-index: 10;
 }
 
  @media only screen and (max-width: 500px) {
