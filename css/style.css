@@ -210,6 +210,27 @@ h4{
 	right: 20%;
 	z-index: 10;
 }
+.rrss{
+	transform: rotate(90deg);
+    z-index: 10;
+    position: absolute;
+    top: 37.5%;
+    right: 5%;
+}
+.facebook{
+	z-index: 10;
+    position: absolute;
+}
+.instagram{
+	z-index: 10;
+    position: absolute;
+    left: 75px;
+}
+.share{;
+	z-index: 10;
+    position: absolute;
+    left: 150px;
+}
 
  @media only screen and (max-width: 500px) {
 	#section0 .linea-divisora{
