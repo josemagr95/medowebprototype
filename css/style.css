@@ -250,45 +250,37 @@ h4{
 
  @media only screen and (max-width: 500px) {
 	#section0 .fp-bg{
-		background-image: url(../img/tatuado-medo.jpg); 
-		background-size: cover;
 		background-position-x: 42%;
 	}
 	#section0 .linea-divisora{
-		position: absolute;
 		bottom: 10%;
 		right: 50%;
 		height: 35px;
 	}
 	#section0 .logo-medo{
-		position: absolute;
 		bottom: 10%;
 		padding: 7.5px;
 		right: 50%;
 		height: 20px;
 	}
 	#section0 h1{
-		position: absolute;
 		bottom: 10%;
 		left: 50%;
 		padding: 7.5px;
 		font-size: 15px;
 	}
 	#section1 .linea-divisora{
-		position: absolute;
 		bottom: 50%;
 		right: 55%;
 		height: 35px;
 	}
 	#section1 .logo-medo{
-		position: absolute;
 		bottom: 50%;
 		padding: 7.5px;
 		right: 55%;
 		height: 20px;
 	}
 	#section1 h1{
-		position: absolute;
 		bottom: 50%;
 		left: 45%;
 		padding: 7.5px;
@@ -311,23 +303,23 @@ h4{
 		display: none;
 	}
 	#section2 .fp-bg{
-		background-image: url(../img/hibridos.svg);
-		background-size: 60%;
-		background-position: center;	
-		background-repeat: no-repeat;
+		background-size: 190%;
+		background-position-y: 70%;
 	 }
 	 #section3 .fp-bg{
-		background-image: url(../img/app.png);
-		background-size: 30%;
-		background-position: bottom;
-		background-position-x: 75%;
-		background-repeat: no-repeat;
+		background-size: 100%;
 	 }
-	 #section4 .fp-bg{
-		background-image: url(../img/hibrido.png);
-		background-size: 35%;
-		background-position-x: 80%;
-		background-position-y: 70%;
-		background-repeat: no-repeat;
+	 .gif-mesinha{
+		bottom: 23.2%;
+		right: 45.5%;
+		width: 38.8%;
+	 }
+	 .youGet{
+		top: 70%;
+	 }
+	 .youGet-images{
+		height: auto;
+		width: 80%;
+		padding-left: 10%;
 	 }
   }
