@@ -118,11 +118,21 @@ h4{
 	background-repeat: no-repeat;
  }
  #section4 .fp-bg{
-    background-image: url(../img/hibrido.png);
-    background-size: 35%;
-    background-position-x: 80%;
-	background-position-y: 70%;
 	background-repeat: no-repeat;
+ }
+ .youGet{
+    top: 25%;
+ }
+ .youGet-images{
+	height: 475px;
+    padding-left: 50%;
+ }
+ .gif-mesinha{
+	display: none;
+	position: absolute;
+    top: 31.4%;
+    right: 31.2%;
+    width: 11.6%;
  }
  
 .linea-divisora{

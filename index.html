@@ -36,7 +36,7 @@
 				<h4>
 					<span class="facebook"><a href="#">facebook</a></span>
 					<span class="instagram"><a href="https://www.instagram.com/me_do_arauco/" target="_blank">instagram</a></span>
-					<span class="share"><a href="#">share</a></span>
+					<span class="share"><a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fmedo-test.azurewebsites.net%2F" target="_blank">share</a></span>
 				</h4>
 		</div>
 		
@@ -68,13 +68,23 @@
 			<div class="fp-bg"></div>
 			<h2 style="color:#8EE4C6">You Design</h2>
 			<h2></br>what you want</h2>
-			
+			<img src="./img/mesinha.gif" class="gif-mesinha">			
 	</div>
 	
 	<div class="section" id="section4">
 			<div class="fp-bg"></div>
 			<h2 style="color:#8EE4C6">You Get</h2>
 			<h2></br>what you want</h2>
+			<div class="youGet">
+				<div><img src="./img/hibrido.png" class="youGet-images"></div>
+				<div><img src="./img/Mesinha.png" class="youGet-images"></div>
+				<div><img src="./img/sgabello.png" class="youGet-images"></div>
+				<div><img src="./img/rainbow.png" class="youGet-images"></div>
+				<div><img src="./img/wall-system.png" class="youGet-images"></div>
+				<div><img src="./img/chinois.png" class="youGet-images"></div>
+				<div><img src="./img/tavolo-ulian.png" class="youGet-images"></div>
+				<div><img src="./img/suspension.png" class="youGet-images"></div>
+			</div>
 	</div>
 
 <!-- 	
@@ -149,14 +159,22 @@
 		autoScrolling: true,
 		fitToSection:false,
 		v2compatible: false,
+		afterLoad: function(origin, destination, direction){
+			if(destination.index == 3){
+				$('.gif-mesinha').css('display','block');
+			}
+		},
 		onLeave: function(origin, destination, direction){
-		if(destination.index == 0 || destination.index == 1 ){
-			$('.menu-medo').css('display','none');
-		}
-		if(destination.index == 2 || destination.index == 3 || destination.index == 4){
-			$('.menu-medo').show(2000);
-		}
-		}
+			if(destination.index == 0 || destination.index == 1 ){
+				$('.menu-medo').css('display','none');
+			}
+			if(destination.index == 2 || destination.index == 3 || destination.index == 4){
+				$('.menu-medo').show(2000);
+			}
+			if(origin.index == 3){
+				$('.gif-mesinha').css('display','none');
+			}
+		},		
     });	
 </script>
 
@@ -168,6 +186,12 @@
 			autoplay: true,
 			autoplaySpeed: 2500,
  		 });
+		$('.youGet').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2500,
+ 		});
 	});
 </script>
 
