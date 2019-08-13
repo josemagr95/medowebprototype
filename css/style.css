@@ -75,6 +75,7 @@ h2{
 	left: 7.5%;
 	top: 50%;
 	padding-left: 12.5%;
+	line-height: 50px;
 }
 h3{
 	color: #8A786F;
@@ -115,9 +116,6 @@ h4{
     background-size: 30%;
     background-position: bottom;
 	background-position-x: 75%;
-	background-repeat: no-repeat;
- }
- #section4 .fp-bg{
 	background-repeat: no-repeat;
  }
  .youGet{
