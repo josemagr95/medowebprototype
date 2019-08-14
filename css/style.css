@@ -102,8 +102,8 @@ h5{
 	z-index: 10;
 	text-align: left;
 	position: absolute;
-	width: 250px;
-	top: 255px;
+	width: 100%;
+	top: 5px;
 }
 h6{
 	font-family: Arial, sans-serif;
@@ -113,8 +113,8 @@ h6{
 	z-index: 12;
 	text-align: right;
 	position: absolute;
-	width: 250px;
-	top: 275px;
+	width: 100%;
+	top: 25px;
 }
  .section{
 	 text-align:center;
@@ -147,19 +147,19 @@ h6{
     color: #F1F3F4;
  }
  .natural{
-	height: 250px;
+	width: 20%;
     position: absolute;
     bottom: 20%;
     left: 20%;
  }
  .easy{
-	height: 250px;
+	width: 20%;
     position: absolute;
     bottom: 20%;
     left: 42.5%;
  }
  .cloud{
-	height: 250px;
+	width: 20%;
     position: absolute;
     bottom: 20%;
     left: 65%;
