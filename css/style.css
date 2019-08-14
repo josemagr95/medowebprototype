@@ -94,6 +94,28 @@ h4{
 	font-size: 10px;
     z-index: 10;
 }
+h5{
+	font-family: Arial, sans-serif;
+	color: #FFFFFF;
+	font-weight: 300;
+	font-size: 15px;
+	z-index: 10;
+	text-align: left;
+	position: absolute;
+	width: 250px;
+	top: 255px;
+}
+h6{
+	font-family: Arial, sans-serif;
+	color: #8A786F;
+	font-weight: 300;
+	font-size: 10px;
+	z-index: 12;
+	text-align: right;
+	position: absolute;
+	width: 250px;
+	top: 275px;
+}
  .section{
 	 text-align:center;
  }
@@ -117,6 +139,30 @@ h4{
     background-position: bottom;
 	background-position-x: 75%;
 	background-repeat: no-repeat;
+ }
+ #section5 .fp-bg{
+    background-color: #2A2A2A; 
+ }
+ #section5 h2{
+    color: #F1F3F4;
+ }
+ .natural{
+	height: 250px;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+ }
+ .easy{
+	height: 250px;
+    position: absolute;
+    bottom: 20%;
+    left: 42.5%;
+ }
+ .cloud{
+	height: 250px;
+    position: absolute;
+    bottom: 20%;
+    left: 65%;
  }
  .youGet{
     top: 25%;
