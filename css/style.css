@@ -342,10 +342,12 @@ h6{
 	h2{
 		font-size: 2.75rem;
 		left: 5%;
+		width: 90%;
 	}
 	#section5 h2{
 		font-size: 2.25rem;
 		line-height: 35px;
+		width: 90%;
 	 }
 	h3{
 		display: none;
@@ -371,32 +373,32 @@ h6{
 		padding-left: 10%;
 	 }
 	 .natural{
-		width: 33%;
+		width: 30%;
 		position: absolute;
 		bottom: 43%;
 		left: 10%;
 	 }
 	 .easy{
-		width: 33%;
+		width: 30%;
 		position: absolute;
 		bottom: 23%;
 		left: 10%;
 	 }
 	 .cloud{
-		width: 33%;
+		width: 30%;
 		position: absolute;
 		bottom: 3%;
 		left: 10%;
 	 }
 	 h5{
 		font-size: 15px;
-		width: 120%;
+		width: 135%;
 		top: -100px;
     	left: 110%;
 	}
 	h6{
 		font-size: 10px;
-		width: 120%;
+		width: 135%;
 		top: -15px;
 		left: 100%;
 	}
