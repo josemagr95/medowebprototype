@@ -116,6 +116,7 @@
 <script type="text/javascript" src="./js/fullpage.extensions.min.js"></script>
 <script type="text/javascript" src="./js/jquery.min.js"></script>
 <script type="text/javascript" src="./js/slick.min.js"></script>
+<script type="text/javascript" src="./js/	imagesloaded.pkgd.min.js"></script>
 
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
@@ -154,8 +155,8 @@
 </script>
 
 <script>
-	$(document).ready(function() {
-		$('#section0 .fp-bg').ready(function() {
+	$(document).imagesLoaded(function() {
+		$('#section0 .fp-bg').imagesLoaded({ background: true },function() {
 			$('#section0 .fp-bg').show();
 			$('#fullpage').show();
 	});
