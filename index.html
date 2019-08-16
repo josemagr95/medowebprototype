@@ -155,7 +155,10 @@
 
 <script>
 	$(document).ready(function() {
-		$('#fullpage').show();
+		$('#section0 .fp-bg').ready(function() {
+			$('#section0 .fp-bg').show();
+			$('#fullpage').show();
+	});
 	});
 	$(document).ready(function(){
 		$('.youGet').slick({
