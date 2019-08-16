@@ -155,11 +155,9 @@
 </script>
 
 <script>
-	$(document).imagesLoaded(function() {
-		$('#section0 .fp-bg').imagesLoaded({ background: true },function() {
-			$('#section0 .fp-bg').show();
-			$('#fullpage').show();
-	});
+	$('#section0 .fp-bg').imagesLoaded({ background: true },function() {
+		$('#fullpage').show();
+		$('#section0 .fp-bg').show();		
 	});
 	$(document).ready(function(){
 		$('.youGet').slick({
