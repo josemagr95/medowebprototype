@@ -108,6 +108,13 @@
 				<div class="cloud"><h6><a href="#">learn more></a></h6></div>
 			</div>		
 	</div>
+	<div class="section" id="section6">
+			<div class="fp-bg"></div>
+			<iframe id="sdv-iframe" width="100%" height="100%" src="https://viewer.shapediver.com/v2/2.14.0/iframe/remote.html?modelViewUrl=eu-central-1&ticket=cc22cffcf0c96cab52a8249cd70898a16728d3fadcd25c1abbcba9b068683bde24f8037c01f19c593af2c2d9c2d3f4c8c1a89ffc801e1ac27f9f26a1e1555283e3015dee82e57a26fdf439e2fb7a17dfa6a4eeb85868d0084f65bda9d97a9de7959b574ed0e87cbb920ca015ccd6c38155ad2f67cc2d-221403384cd0843ab8ec5a7e4a248bf5" referrerpolicy="origin" allowfullscreen scrolling="no" style="overflow-x: hidden; overflow-y: hidden; border-width: 0; z-index: 1;">
+			<p>Your browser does not support iframes.</p>
+			</iframe>
+	</div>
+	
 
 
 <script type="text/javascript" src="./js/fullpage.js"></script>
@@ -120,7 +127,7 @@
 
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
-		anchors: ['home', 'me_do', 'you_do', 'you_design', 'you_get', 'new_way'],
+		anchors: ['home', 'me_do', 'you_do', 'you_design', 'you_get', 'new_way','configurator'],
 		licenseKey: '5C38BC7D-960744E4-95CC12D2-0B887589',
         verticalCentered: false,
 		navigation:true,
@@ -144,7 +151,7 @@
 			if(destination.index == 0 || destination.index == 1 ){
 				$('.menu-medo').css('display','none');
 			}
-			if(destination.index == 2 || destination.index == 3 || destination.index == 4 || destination.index == 5){
+			if(destination.index == 2 || destination.index == 3 || destination.index == 4 || destination.index == 5 || destination.index == 6){
 				$('.menu-medo').show(2000);
 			}
 			if(origin.index == 3){

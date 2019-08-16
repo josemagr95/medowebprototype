@@ -147,6 +147,9 @@ h6{
  #section5 h2{
     color: #F1F3F4;
  }
+ #section6 .fp-bg{
+    background-color: #2A2A2A; 
+ }
  .natural{
 	width: 20%;
     position: absolute;
