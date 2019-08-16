@@ -109,52 +109,6 @@
 			</div>		
 	</div>
 
-<!-- 	
-	<div class="section" id="section5">
-		<div class="fp-bg"></div>
-		<div class="disenadores">
-				<div><img src="./img/defne.png" class="designer">
-					<h5>Defne Koz</h5>
-					<h6>Turquía</h6>
-				</div>
-
-				<div><img src="./img/karich.png" class="designer">
-					<h5>J.C. Karich</h5>
-					<h6>Chile</h6>
-				</div>
-
-				<div><img src="./img/flavia.png" class="designer">
-					<h5>Flavia Alves de Souza</h5>
-					<h6>Brasil</h6>
-				</div>
-
-				<div><img src="./img/iachetti.png" class="designer">
-					<h5>Giulio Iacchetti</h5>
-					<h6>Italia</h6>
-				</div>
-
-				<div><img src="./img/pailard.png" class="designer">
-					<h5>Nicolas Paillard</h5>
-					<h6>Francia</h6>
-				</div>
-
-				<div><img src="./img/ulian.png" class="designer">
-					<h5>Paolo Ulian</h5>
-					<h6>Italia</h6>
-				</div>
-
-		</div>
-		<img src="./img/medo_black.svg" class="logo-medo">
-	</div>
-	
-	<div class="section" id="section6">
-		<div class="fp-bg"></div>
-		<h3>Redes Sociales</h3>
-		<h4>Partners.</h4>
-		<img src="./img/medo_white.svg" class="logo-medo">
-	</div>
-</div> -->
-
 
 <script type="text/javascript" src="./js/fullpage.js"></script>
 <script type="text/javascript" src="./js/examples.js"></script>
@@ -162,7 +116,6 @@
 <script type="text/javascript" src="./js/fullpage.extensions.min.js"></script>
 <script type="text/javascript" src="./js/jquery.min.js"></script>
 <script type="text/javascript" src="./js/slick.min.js"></script>
-<script type="text/javascript" src="./js/jquery.parallaxify.js"></script>
 
 <script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
@@ -201,13 +154,10 @@
 </script>
 
 <script>
+	$(document).ready(function() {
+		$('#fullpage').show();
+	});
 	$(document).ready(function(){
-  		$('.disenadores').slick({
-    		slidesToShow: 1,
-			slidesToScroll: 1,
-			autoplay: true,
-			autoplaySpeed: 2500,
- 		 });
 		$('.youGet').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
@@ -215,63 +165,6 @@
 			autoplaySpeed: 2500,
  		});
 	});
-</script>
-
-<script>
-	function myFunction(x) {
-			if (x.matches) {		
-				$('.disenadores').slick({
-					slidesToShow: 1,				
-					slidesToScroll: 1,
-					autoplaySpeed: 2500,
-					autoplay: true,
-			});
-			} else {			
-				$('.disenadores').slick({
-					slidesToShow: 4,
-					slidesToScroll: 1,
-					autoplaySpeed: 2000,
-					autoplay: true,
-			});
-			}
-			}
-	var x = window.matchMedia("(max-width: 600px)")
-	myFunction(x) 
-	x.addListener(myFunction) 
-</script>
-
-<script>	
-	$(document).ready(function(){
-		$.parallaxify({
-			responsive: true,
-			motionType: 'natural',
-        	mouseMotionType: 'gaussian',
-			motionAngleX: 90,
-			motionAngleY: 90,
-			alphaFilter: 0.5,
-			useGyroscope: false,
-			positionProperty: 'transform'
-		});
-	});
-
-	$.parallaxify.positionProperty.inverted = {
-      setPosition: function($element, left, originalLeft, top, originalTop) {
-        $element.css('transform', 'translate(' + (originalLeft - left) + 'px, ' + (originalTop - top) + 'px)');
-      }
-	  };
-	  
-  	$('.invertido-parallax').parallaxify({
-		positionProperty: 'inverted',
-		responsive: true,
-		motionType: 'natural',
-        mouseMotionType: 'gaussian',
-		motionAngleX: 90,
-		motionAngleY: 90,
-		alphaFilter: 0.5,
-		adjustBasePosition: true,
-		alphaPosition: 0.025,
-		useGyroscope: false	
-  	});
 </script>
 
 </body>

@@ -224,6 +224,9 @@ h6{
     font-size: 20px;
     padding: 12.5px;
 }
+#fullpage {
+	display: none;
+}
 .menu{
 	height: 20px;
     position: absolute;
