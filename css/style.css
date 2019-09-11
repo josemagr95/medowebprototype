@@ -105,17 +105,6 @@ h5{
 	width: 100%;
 	top: 5px;
 }
-h6{
-	font-family: Arial, sans-serif;
-	color: #8A786F;
-	font-weight: 300;
-	font-size: 10px;
-	z-index: 12;
-	text-align: right;
-	position: absolute;
-	width: 100%;
-	top: 25px;
-}
  .section{
 	 text-align:center;
  }
@@ -126,107 +115,118 @@ h6{
      background-position: center 80%;
  }
  #section1 .fp-bg{
-     background-color: #1D1D1B;
- }
- #section2 .fp-bg{
     background-image: url(../img/hibridos.svg);
     background-size: 60%;
 	background-position: center;	
 	background-repeat: no-repeat;
  }
- #section3 .fp-bg{
+ #section2 .fp-bg{
     background-image: url(../img/app.png);
     background-size: 30%;
     background-position: bottom;
 	background-position-x: 75%;
 	background-repeat: no-repeat;
  }
+ #section4 .fp-bg{
+    background-color: #2A2A2A; 
+ }
+ #section4 h2{
+    color: #F1F3F4;
+ }
  #section5 .fp-bg{
     background-color: #2A2A2A; 
  }
- #section5 h2{
-    color: #F1F3F4;
- }
- #section6 .fp-bg{
-    background-color: #2A2A2A; 
- }
+.app{
+	position: absolute;
+    right: 12.5%;
+    bottom: 7.5%;
+}
+.app-badge{
+	height: 25px;
+	padding-left: 5px;
+}
+
  .natural{
 	width: 20%;
     position: absolute;
     bottom: 20%;
-    left: 20%;
+	left: 20%;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	opacity: 1;
+	display: block;
  }
+ .natural:hover{
+	opacity: 0.3;
+ }
+
  .easy{
 	width: 20%;
     position: absolute;
     bottom: 20%;
-    left: 42.5%;
+	left: 42.5%;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	opacity: 1;
+	display: block;
  }
+ .easy:hover{
+	opacity: 0.3;
+ }
+
  .cloud{
 	width: 20%;
     position: absolute;
     bottom: 20%;
-    left: 65%;
+	left: 65%;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	opacity: 1;
+	display: block;
  }
+ .cloud:hover{
+	opacity: 0.3;
+ }
+
+
  .youGet{
-    top: 25%;
+    top: 15%;
  }
  .youGet-images{
-	height: 475px;
-    padding-left: 50%;
+	height: 550px;
+    padding-left: 40%;
  }
  .gif-mesinha{
 	display: none;
 	position: absolute;
-	bottom: 25.6%;
-    right: 31.2%;
-    width: 11.6%;
+    bottom: 305px;
+    right: 32.2%;
+    width: 9.6%;
  }
  
 .linea-divisora{
-	height: 50px;
+	height: 35px;
+    z-index: 4;
+	padding-left: 13px;
+    padding-right: 13px;
+    margin: -10.5px;
  }
  
 .logo-medo{
-    height: 25px;
+	height: 22.5px;
     z-index: 4;
+    padding-right: 5px;
+    margin: -3px;
+}
+.logo-medo-whatyouwant{
+	position: absolute;
+    right: 12.5%;
+    bottom: 36%;
+    height: 70px;
 }
 
-#section0 .linea-divisora{
-    position: absolute;
-    bottom: 10%;
-    right: 25%;
-}
-#section0 .logo-medo{
-	position: absolute;
-    bottom: 10%;
-    padding: 12.5px;
-    right: 25%;
-}
 #section0 h1{
-	position: absolute;
-    bottom: 10%;
-	left: 75%;
     font-size: 20px;
-    padding: 12.5px;
-}
-#section1 .linea-divisora{
-    position: absolute;
-    bottom: 50%;
-    right: 50%;
-}
-#section1 .logo-medo{
-	position: absolute;
-    bottom: 50%;
-    padding: 12.5px;
-    right: 50%;
-}
-#section1 h1{
-	position: absolute;
-    bottom: 50%;
-    left: 50%;
-    font-size: 20px;
-    padding: 12.5px;
 }
 #fullpage {
 	display: none;
@@ -298,6 +298,158 @@ h6{
     position: absolute;
     left: 150px;
 }
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+	background: #333;
+}
+
+.container {
+	z-index: 10;
+    position: absolute;
+	right: 17.5%;
+	bottom: 90%;
+  }
+.the-arrow {
+	width: 1px;
+	transition: all 0.2s;
+  }
+  .the-arrow.-left {
+	position: absolute;
+	top: 60%;
+	left: 0;
+  }
+  .the-arrow.-left > .shaft {
+	width: 0;
+	background-color: #bbb;
+  }
+  .the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+	width: 0;
+	background-color: #bbb;
+  }
+  .the-arrow.-left > .shaft:before {
+	-webkit-transform: rotate(0);
+			transform: rotate(0);
+  }
+  .the-arrow.-left > .shaft:after {
+	-webkit-transform: rotate(0);
+			transform: rotate(0);
+  }
+  .the-arrow.-right {
+	top: 3px;
+  }
+  .the-arrow.-right > .shaft {
+	width: 1px;
+	transition-delay: 0.2s;
+  }
+  .the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+	width: 8px;
+	transition-delay: 0.3s;
+	transition: all 0.5s;
+  }
+  .the-arrow.-right > .shaft:before {
+	-webkit-transform: rotate(40deg);
+			transform: rotate(40deg);
+  }
+  .the-arrow.-right > .shaft:after {
+	-webkit-transform: rotate(-40deg);
+			transform: rotate(-40deg);
+  }
+  .the-arrow > .shaft {
+	background-color: #bbb;
+	display: block;
+	height: 1px;
+	position: relative;
+	transition: all 0.2s;
+	transition-delay: 0;
+	will-change: transform;
+  }
+  .the-arrow > .shaft:before, .the-arrow > .shaft:after {
+	background-color: #bbb;
+	content: '';
+	display: block;
+	height: 1px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: all 0.2s;
+	transition-delay: 0;
+  }
+  .the-arrow > .shaft:before {
+	-webkit-transform-origin: top right;
+			transform-origin: top right;
+  }
+  .the-arrow > .shaft:after {
+	-webkit-transform-origin: bottom right;
+			transform-origin: bottom right;
+  }
+  
+  .animated-arrow {
+	display: inline-block;
+	color: #bbb;
+    font-size: 1.25rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+	text-decoration: none;
+	position: relative;
+	transition: all 0.2s;
+  }
+  .animated-arrow:hover {
+	color: #808080;
+  }
+  .animated-arrow:hover > .the-arrow.-left > .shaft {
+	width: 64px;
+	transition-delay: 0.1s;
+	background-color: #808080;
+  }
+  .animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+	width: 8px;
+	transition-delay: 0.1s;
+	background-color: #808080;
+  }
+  .animated-arrow:hover > .the-arrow.-left > .shaft:before {
+	-webkit-transform: rotate(40deg);
+			transform: rotate(40deg);
+  }
+  .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+	-webkit-transform: rotate(-40deg);
+			transform: rotate(-40deg);
+  }
+  .animated-arrow:hover > .main {
+	-webkit-transform: translateX(17px);
+			transform: translateX(17px);
+	-webkit-transform: translateX(80px);
+			transform: translateX(80px);
+  }
+  .animated-arrow:hover > .main > .the-arrow.-right > .shaft {
+	width: 0;
+	-webkit-transform: translateX(200%);
+			transform: translateX(200%);
+	transition-delay: 0;
+  }
+  .animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+	width: 0;
+	transition-delay: 0;
+	transition: all 0.1s;
+  }
+  .animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
+	-webkit-transform: rotate(0);
+			transform: rotate(0);
+  }
+  .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+	-webkit-transform: rotate(0);
+			transform: rotate(0);
+  }
+  .animated-arrow > .main {
+	display: flex;
+	align-items: center;
+	transition: all 0.2s;
+  }
+  .animated-arrow > .main > .text {
+	margin: 0 16px 0 0;
+	line-height: 1;
+  }
+  .animated-arrow > .main > .the-arrow {
+	position: relative;
+  }
 
  @media only screen and (max-width: 500px) {
 	#section0 .fp-bg{
@@ -320,23 +472,6 @@ h6{
 		padding: 7.5px;
 		font-size: 15px;
 	}
-	#section1 .linea-divisora{
-		bottom: 50%;
-		right: 55%;
-		height: 35px;
-	}
-	#section1 .logo-medo{
-		bottom: 50%;
-		padding: 7.5px;
-		right: 55%;
-		height: 20px;
-	}
-	#section1 h1{
-		bottom: 50%;
-		left: 45%;
-		padding: 7.5px;
-		font-size: 15px;
-	}
 	.rrss{
 		display: none;
 	}
@@ -351,7 +486,7 @@ h6{
 		left: 5%;
 		width: 80%;
 	}
-	#section5 h2{
+	#section4 h2{
 		font-size: 2.25rem;
 		line-height: 35px;
 		width: 80%;
@@ -359,15 +494,15 @@ h6{
 	h3{
 		display: none;
 	}
-	#section2 .fp-bg{
+	#section1 .fp-bg{
 		background-size: 190%;
 		background-position-y: 70%;
 	 }
-	 #section3 .fp-bg{
+	#section2 .fp-bg{
 		background-size: 100%;
 	 }
 	 .gif-mesinha{
-		bottom: 23.2%;
+		bottom: 305px;
 		right: 45.5%;
 		width: 38.8%;
 	 }
@@ -410,3 +545,35 @@ h6{
 		left: 100%;
 	}
   }
+  
+
+
+.arrow-up{
+	width: 3%;
+	height: auto;
+	z-index: 10;
+	position: relative;
+  	animation-name: up;
+  	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	opacity: 0.5;
+}
+.arrow-down{
+	width: 3%;
+	height: auto;
+	z-index: 10;
+	position: relative;
+	left: -3%;
+  	animation-name: down;
+  	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	opacity: 0.5;
+}
+@keyframes up {
+	0%   {top:3%;opacity: 0;}
+	100% {top:2.5%;opacity: 0.3;}
+  }
+@keyframes down {
+	0%   {top:93%;opacity: 0;}
+	100% {top:93.5%;opacity: 0.3;}
+}
